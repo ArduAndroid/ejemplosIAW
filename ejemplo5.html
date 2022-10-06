@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <title>JAVASCRIPT: Primer script</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <script type="text/javascript">
+            var ivaInc = true;
+            var precioBase = 500;
+            var tipoIva = 1.21;
+            var precioFinal;
+            if(ivaInc==true){
+                precioFinal = precioBase*tipoIva;
+                alert("Precio base: "+precioBase+"\n"
+                +"IVA(21%): "+tipoIva+"\n"
+                +"Precio final: "+precioFinal);
+            }
+            else {
+                precioFinal = precioBase;
+                alert(precioFinal);
+            }
+    </script>
+</head>
+
+<body>
+    <p>Esta página contiene el primer script</p>
+</body>
+
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <title>JAVASCRIPT: Ejercicio bucles</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <script type="text/javascript">
+        
+        /*alert("Resultado de 4/2: " +4/2);
+        alert("Resultado de 4%2: "    +   4%2);*/
+         while (opcion != "fin") {
+            var opcion = prompt("0 pares, 1 para impares, fin para cancelar");
+            if (opcion == 0) {
+                for (var i = 0; i <= 100; i++) {
+                    if (i % 2 == 0) {
+                        alert(i);
+                    }
+                }
+            }
+            if (opcion == 1) {
+                for (var i = 0; i <= 100; i++) {
+                    if (i % 2 != 0) {
+                        alert(i);
+                    }
+                }
+            }
+            else if (opcion != "fin" && opcion != 0 && opcion != 1) {
+                alert("ERROR");
+            }
+        } 
+    </script>
+</head>
+
+<body>
+    <p>Esta página contiene el primer script</p>
+</body>
+
+</html>

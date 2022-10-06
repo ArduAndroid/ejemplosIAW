@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <title>JAVASCRIPT: Primer script</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <script type="text/javascript">
+        var texto1 = 'Una frase con \'comillas simples\' dentro';
+        var texto2 = "Una frase con \"comillas dobles\" dentro";
+        
+        var dias = ["Lunes", "Martes", "Miércoles", "Jueves", "Viernes", "Sábado", "Domingo"];
+        var meses = ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto","Septiembre","Octubre","Noviembre","Diciembre"];
+        
+
+        while(i<5){
+            alert(meses[i]);
+            i++;
+        }
+
+
+        //alert("LEEEEEEENGTH: "+meses.length);
+
+        for(i=0;i<5;i++){
+            alert(meses[i]);
+        }
+
+        var contador=0;
+        meses.forEach(i => 
+        {            
+            if(contador<=5){
+                alert(i);
+            }
+            
+            contador++;
+        }
+        );
+
+
+    </script>
+</head>
+
+<body>
+    <p>Esta página contiene el primer script</p>
+</body>
+
+</html>

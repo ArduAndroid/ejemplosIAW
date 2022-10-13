@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <title>JAVASCRIPT: Factorial</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <script type="text/javascript">
+
+        var numero = parseInt(prompt("Introduzca el número"));
+        var letra = prompt("Introduzca la letra");
+        var letraCalculada = "";
+        var letras = ['T', 'R', 'W', 'A', 'G', 'M', 'Y', 'F', 'P', 'D', 'X', 'B', 'N', 'J', 'Z', 'S', 'Q', 'V', 'H', 'L', 'C', 'K', 'E', 'T'];
+
+        if (numero < 0 || numero > 99999999) {
+            alert("Por favor introduzca un número correcto");
+        }
+        else {
+            var indice = numero % 23;
+            alert("Número calculado que sirve de índice"+indice);
+            var letraCalculada = letras[indice];
+            alert(letraCalculada);
+            if(letra==letraCalculada){
+                alert("OKEY")
+            }else{alert("NOT OKEY");}
+            
+        }
+    </script>
+</head>
+
+<body>
+    <p>Esta página contiene el primer script</p>
+</body>
+
+</html>

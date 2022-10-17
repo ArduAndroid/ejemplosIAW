@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+    <h2>JavaScript Regular Expressions</h2>
+
+    <p>Search for an "e" in the next paragraph:</p>
+
+    <p id="p01">HAY LeTRA</p>
+
+    <p id="demo"></p>
+
+    <script>
+        var text = document.getElementById("p01").innerHTML;
+        const pattern = /[eE]/;
+        document.getElementById("demo").innerHTML = pattern.test(text);
+    </script>
+
+</body>
+
+</html>

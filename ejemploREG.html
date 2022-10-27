@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+    <h2>JavaScript Regular Expressions</h2>
+
+    <p>The test() method returns true if it finds a match, otherwise false.</p>
+
+    <p>Search a string for the character "e":</p>
+
+    <input id="entrada" type="text">
+
+    <button onclick="probar()">PULSAR</button>
+
+    <p id="demo">Resultado</p>
+
+    <script>
+        function probar() {
+            var text = document.getElementById("entrada").value;
+            var pepito = /[a-z]/;
+            var result = pepito.test(text);
+            if(result){
+                document.getElementById("demo").innerHTML = "Minúsculas correcto";
+            }
+            else {
+                document.getElementById("demo").innerHTML = "Debe contener minúsculas";
+            }
+            
+        
+        }
+
+        
+    </script>
+
+</body>
+
+</html>

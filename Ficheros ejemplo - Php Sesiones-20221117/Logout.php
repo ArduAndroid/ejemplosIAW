@@ -22,7 +22,7 @@
         if (isset($_POST["logoff"])) {  //Se comprueba que se ha enviado el formulario previamente mediante POST.
             //session_unset();
             session_destroy();
-            header("Location: login.php"); //Redirección a la página de inicio de sesión
+            header("Location: login.html"); //Redirección a la página de inicio de sesión
         }
         ?>
 

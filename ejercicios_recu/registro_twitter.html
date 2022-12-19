@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="registro_twitter.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <form action="#" method="POST" onsubmit="return validarRegistro()">
+        <h1>Bienvenido a Twitter</h1>
+        <label id="etiquetaNombre" for="cajaNombre">Nombre:</label><br>
+        <input required id="cajaNombre" type="text" name="nombre" pattern="[A-Za-z]+"><br>
+        <label id="etiquetaTelefono" for="lname">Teléfono:</label><br>
+        <input required id="cajaTelefono" type="text" name="telefono" pattern="^6[0-9]{8}"><br>
+        <label id="etiquetaFecha" for="lname">Fecha:</label><br>
+        <input required id="cajaFecha" type="date" name="fecha"><br>
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+</html>

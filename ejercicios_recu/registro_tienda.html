@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="registro_tienda.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <form action="#" method="POST" onsubmit="return validarRegistro()">
+        <label id="etiquetaNombre" for="cajaNombre">Nombre:</label><br>
+        <input id="cajaNombre" type="text" name="nombre" pattern="[A-Za-z]+"><br>
+        <label id="etiquetaEmail" for="lname">Email:</label><br>
+        <input id="cajaEmail" type="email" name="email"><br>
+        <label id="etiquetaPassword" for="lname">Password:</label><br>
+        <input id="cajaPassword" type="text" name="password"><br>
+        <label id="cajaPassword2" for="lname">Repita su password:</label><br>
+        <input id="cajaPassword2" type="text" name="password2"><br><br><br>
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+</html>

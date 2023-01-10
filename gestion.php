@@ -13,5 +13,5 @@
     }
 
 
-echo "<a href='subida.php'>LLEVAME A OTRO LAO</a>";
+echo "<a href='form_subida.php'>LLEVAME A OTRO LAO</a>";
 ?>

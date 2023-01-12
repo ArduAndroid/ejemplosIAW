@@ -1,11 +1,15 @@
 <?php
-
+session_start();
 $target_dir = "uploads/";
 $target_file = $target_dir . basename($_FILES["ficheroSubida"]["name"]);
-echo "Filename: " . $_FILES['ficheroSubida']['name']."<br>";
-echo "Type : " . $_FILES['ficheroSubida']['type'] ."<br>";
-echo "Size : " . $_FILES['ficheroSubida']['size'] ."<br>";
-echo "Temp name: " . $_FILES['ficheroSubida']['tmp_name'] ."<br>";
+
+$_SESSION["rutafoto"] = $target_file;
+
+
+echo "Nombre de fichero: " . $_FILES['ficheroSubida']['name']."<br>";
+echo "Tipo de fichero : " . $_FILES['ficheroSubida']['type'] ."<br>";
+echo "Tamaño del fichero : " . $_FILES['ficheroSubida']['size'] ."<br>";
+echo "Nombre temporal: " . $_FILES['ficheroSubida']['tmp_name'] ."<br>";
 echo "Error : " . $_FILES['ficheroSubida']['error'] . "<br>";
 $uploadOk = 1;
 $imageFileType = strtolower(pathinfo($target_file, PATHINFO_EXTENSION));
@@ -52,4 +56,11 @@ if ($uploadOk == 0) {
     echo "Sorry, there was an error uploading your file.";
   }
 }
+
+echo "<br><br><br>";
+echo "<a href='visualizar.php'>VAMOH A VEEEEH</>";
 ?>
+
+
+
+

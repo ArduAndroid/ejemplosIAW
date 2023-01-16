@@ -5,7 +5,7 @@
     echo $_SESSION["dni"];
 
     echo "<img src='".$_SESSION["rutafoto"]."'>";
-    //session_destroy();
+    session_destroy();
     echo "<a href='inicio.html'>volver al inicio</a>";
 
     echo "<br>";

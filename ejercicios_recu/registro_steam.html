@@ -11,9 +11,12 @@
     <form action="#" method="POST" onsubmit="return validarRegistro()">
         
         <label id="etiquetaEmail" for="lname">Email:</label><br>
-        <input required id="cajaEmail" type="email" name="email" pattern="[A-Za-z0-9]{1,26}"><br>
-        <!--<input required id="cajaEmail" type="email" name="email" pattern="[.]$.com"><br>-->
+        <!--<input required id="cajaEmail" type="email" name="email" pattern="[A-Za-z0-9]{1,26}"><br>-->
+        <!--<input required id="cajaEmail" type="text" name="email" pattern="[A-Za-z0-9]{1,50}@[A-Za-z0-9]+.com"><br>-->
+        <input required id="cajaEmail" type="email" name="email" pattern=".+@.+(\.com|\.es)$"><br>
 
+
+        
         <label id="etiquetaEmail2" for="lname">Repita su email:</label><br>
         <input required id="cajaEmail2" type="text" name="email2"><br>
 
